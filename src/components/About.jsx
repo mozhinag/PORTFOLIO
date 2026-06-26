@@ -3,13 +3,15 @@ import { motion } from "framer-motion";
 
 const About = () => {
   return (
-    <section id="about" className="min-h-screen px-6 py-20">
-      <div className="max-w-5xl w-full grid md:grid-cols-2 gap-10 items-center">
-        {/* 🧑‍💻 Left Side - Text */}
+    <section id="about" className="min-h-screen px-6 py-20 flex items-center justify-center">
+      {/* ✅ SINGLE CONTAINER */}
+      <div className="max-w-5xl w-full mx-auto grid md:grid-cols-2 gap-12 items-center">
+        {/* 🧑‍💻 LEFT */}
         <motion.div
           initial={{ opacity: 0, x: -80 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
+          className="text-center md:text-left"
         >
           <h2 className="text-3xl md:text-5xl font-bold mb-6">
             About{' '}
@@ -34,18 +36,19 @@ const About = () => {
 
           <p className="text-gray-400 text-md leading-relaxed">
             I enjoy solving real-world problems, learning new technologies, and continuously
-            improving my skills as a developer.
+            improving my skills.
           </p>
         </motion.div>
 
-        {/* 🎨 Right Side - Card */}
+        {/* 🎨 RIGHT */}
         <motion.div
           initial={{ opacity: 0, x: 80 }}
-          whileInView={{ opacity: 1, x: 0 }}
+          whileInView={{ opacity: 1, x: 20 }}
+          transition={{ duration: 0.8 }}
           className="flex justify-center"
         >
-          <div className="relative w-64 h-64">
-            {/* Glow effect */}
+          <div className="relative w-64 h-64 md:w-72 md:h-72">
+            {/* Glow */}
             <div className="absolute inset-0 bg-gradient-to-r from-purple-500 to-blue-500 blur-2xl opacity-30 rounded-full"></div>
 
             {/* Image */}

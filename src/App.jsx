@@ -1,3 +1,5 @@
+
+
 import About from './components/About';
 import Header from './components/Header';
 import Hero from './components/Hero';
@@ -7,7 +9,7 @@ import Skills from './components/Skills';
 import Footer from './components/Footer';
 function App() {
   return (
-    <div className="bg-gradient-to-br from-[#0f0c29] via-[#302b63] to-[#24243e] text-white">
+    <div className="overflow-y-hidden bg-gradient-to-br from-[#0f0c29] via-[#302b63] to-[#24243e] text-white">
       <Header />
       <Hero />
       <About />

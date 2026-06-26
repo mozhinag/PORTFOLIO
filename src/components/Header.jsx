@@ -1,5 +1,3 @@
-
-
 import { useState, useEffect } from 'react';
 
 const Header = () => {
@@ -50,6 +48,7 @@ bg-white/10 backdrop-blur-lg border-b border-white/20 text-white"
       </div>
 
       {/* Mobile Menu */}
+
       {menuOpen && (
         <ul className="md:hidden mt-4 flex flex-col gap-4 bg-[#1e293b] p-4 rounded">
           <li>
@@ -65,11 +64,6 @@ bg-white/10 backdrop-blur-lg border-b border-white/20 text-white"
           <li>
             <a href="#skills" onClick={() => setMenuOpen(false)}>
               Skills
-            </a>
-          </li>
-          <li>
-            <a href="#experience" onClick={() => setMenuOpen(false)}>
-              Experience
             </a>
           </li>
           <li>

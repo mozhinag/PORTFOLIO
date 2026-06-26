@@ -35,7 +35,7 @@ const skills = [
     icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg',
   },
   {
-    name: 'Tailwind',
+    name: 'Tailwind CSS',
     icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg',
   },
   {
@@ -51,34 +51,34 @@ const skills = [
     icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg',
   },
 
-  {
-    name: 'npm',
-    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg',
-  },
-  {
-    name: 'VS Code',
-    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg',
-  },
-  {
-    name: 'REST API',
-    icon: 'https://cdn.simpleicons.org/swagger/85EA2D',
-  },
-  {
-    name: 'Cloudinary',
-    icon: 'https://cdn.simpleicons.org/cloudinary/3448C5',
-  },
-  {
-    name: 'Copilot',
-    icon: 'https://cdn.simpleicons.org/githubcopilot/ffffff',
-  },
-  {
-    name: 'Socket.io',
-    icon: 'https://cdn.simpleicons.org/socketdotio/ffffff',
-  },
-  {
-    name: 'Netlify',
-    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/netlify/netlify-original.svg',
-  },
+  // {
+  //   name: 'npm',
+  //   icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg',
+  // },
+  // {
+  //   name: 'VS Code',
+  //   icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg',
+  // },
+  // {
+  //   name: 'REST API',
+  //   icon: 'https://cdn.simpleicons.org/swagger/85EA2D',
+  // },
+  // {
+  //   name: 'Cloudinary',
+  //   icon: 'https://cdn.simpleicons.org/cloudinary/3448C5',
+  // },
+//   {
+//     name: 'Copilot',
+//     icon: 'https://cdn.simpleicons.org/githubcopilot/ffffff',
+//   },
+//   {
+//     name: 'Socket.io',
+//     icon: 'https://cdn.simpleicons.org/socketdotio/ffffff',
+//   },
+//   {
+//     name: 'Netlify',
+//     icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/netlify/netlify-original.svg',
+//   },
 ];
 
 const Skills = () => {
@@ -91,14 +91,14 @@ const Skills = () => {
           whileInView={{ opacity: 1, y: 0 }}
           className="text-3xl md:text-5xl font-bold text-center mb-12"
         >
-          My{' '}
+       
           <span className="bg-gradient-to-r from-pink-400 to-purple-400 bg-clip-text text-transparent">
             Skills
           </span>
         </motion.h2>
 
         {/* 🔥 Grid (5 per row) */}
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4 gap-8">
           {skills.map((skill, index) => (
             <motion.div
               key={index}
