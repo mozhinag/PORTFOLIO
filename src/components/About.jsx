@@ -53,7 +53,7 @@ const About = () => {
 
             {/* Image */}
             <img
-              src="https://randomuser.me/api/portraits/women/44.jpg"
+              src=" src/assets/images/mozhi2.jpeg "
               alt="profile"
               className="relative w-full h-full object-cover rounded-full border-4 border-white/20"
             />
