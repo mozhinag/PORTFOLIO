@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-
+import profile  from '../assets/images/profile.jpeg';
 const About = () => {
   return (
     <section id="about" className="min-h-screen px-6 py-20 flex items-center justify-center">
@@ -53,7 +53,7 @@ const About = () => {
 
             {/* Image */}
             <img
-              src=" src/assets/images/mozhi2.jpeg "
+              src={profile}
               alt="profile"
               className="relative w-full h-full object-cover rounded-full border-4 border-white/20"
             />

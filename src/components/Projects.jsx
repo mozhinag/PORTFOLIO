@@ -1,10 +1,13 @@
-
-
 import React, { useRef, useState } from 'react';
 import { motion } from 'framer-motion';
-import { title } from 'framer-motion/client';
-import { IoIosArrowBack } from 'react-icons/io';
-import { IoIosArrowForward } from 'react-icons/io';
+import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io';
+
+import BlogApp from '../assets/images/BlogApp.png';
+import MovieApp from '../assets/images/MovieApp.png';
+import ExpenseTracker from '../assets/images/ExpenseTracker.png';
+import GoalSetter from '../assets/images/GoalSetter.png';
+import ToDo from '../assets/images/ToDo.png';
+import Proshop from '../assets/images/proshop.png';
 
 const projects = [
   {
@@ -23,7 +26,7 @@ const projects = [
     ],
     github: 'https://github.com/mozhinag/FIREBASE-MOVIE-APP.git',
     live: 'https://fir-movie-2794f.web.app',
-    image: 'src/assets/images/MovieApp.png',
+    image: MovieApp,
   },
 
   {
@@ -43,7 +46,7 @@ const projects = [
     ],
     github: 'https://github.com/mozhinag/ECOM.git',
     live: 'https://ecom-r4qd.onrender.com',
-    image: 'src/assets/images/proshop.png',
+    image: Proshop,
   },
 
   {
@@ -64,7 +67,7 @@ const projects = [
     ],
     github: 'https://github.com/mozhinag/Blog-APP.git',
     live: 'https://blog-app-q1gk.onrender.com',
-    image: 'src/assets/images/BlogApp.png',
+    image: BlogApp,
   },
 
   {
@@ -73,7 +76,7 @@ const projects = [
     tech: ['MERN Stack', 'ContextApi', 'Morgan', 'bcrypt', 'Axios', 'JWT', 'React-Icons'],
     github: 'https://github.com/mozhinag/expense-tracker.git',
     live: 'https://expense-tracker-cjvs.onrender.com/',
-    image: 'src/assets/images/Expense-tracker.png',
+    image: ExpenseTracker,
   },
 
   {
@@ -90,7 +93,7 @@ const projects = [
     ],
     github: 'https://github.com/mozhinag/MERN-PRO2.git',
     live: 'https://mern-pro2-1.onrender.com',
-    image: 'src/assets/images/GoalSetter.png',
+    image: GoalSetter,
   },
 
   {
@@ -99,7 +102,7 @@ const projects = [
     tech: ['React', 'MongoDB', 'JWT', 'Redux', 'React-Toastify', 'bcrypt', 'Axios', 'React-Icons'],
     github: 'https://github.com/mozhinag/TODO-LIST.git',
     live: 'https://todo-list-rrk6.onrender.com',
-    image: 'src/assets/images/To-Do.png',
+    image: ToDo,
   },
 ];
 const Projects = () => {
@@ -111,21 +114,21 @@ const Projects = () => {
       [index]: !prev[index],
     }));
   };
-const sliderRef = useRef(null);
+  const sliderRef = useRef(null);
 
-const scrollLeft = () => {
-  sliderRef.current.scrollBy({
-    left: -350,
-    behavior: 'smooth',
-  });
-};
+  const scrollLeft = () => {
+    sliderRef.current.scrollBy({
+      left: -350,
+      behavior: 'smooth',
+    });
+  };
 
-const scrollRight = () => {
-  sliderRef.current.scrollBy({
-    left: 350,
-    behavior: 'smooth',
-  });
-};
+  const scrollRight = () => {
+    sliderRef.current.scrollBy({
+      left: 350,
+      behavior: 'smooth',
+    });
+  };
   return (
     <section id="projects" className="min-h-screen px-6 py-20 text-white">
       <div className="max-w-6xl mx-auto">
