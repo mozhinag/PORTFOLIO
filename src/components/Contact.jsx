@@ -2,7 +2,8 @@ import React from "react";
 import { motion } from "framer-motion";
 import { MdAttachEmail } from "react-icons/md";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
-
+import contactImage from '../assets/images/Contact.jpeg';
+import resumePDF from '../assets/ResumeLinks.pdf';
 const Contact = () => {
   return (
     <section id="contact" className="min-h-screen px-6 py-20 text-white flex items-center">
@@ -10,7 +11,7 @@ const Contact = () => {
         {/* 🖼️ LEFT SIDE IMAGE */}
         <motion.div initial={{ opacity: 0, x: -60 }} whileInView={{ opacity: 1, x: 0 }}>
           <img
-            src="src/assets/images/Contact.jpeg"
+            src={contactImage}
             alt="contact"
             className="w-full max-w-lg mx-auto rounded-2xl shadow-lg"
           />
@@ -77,7 +78,9 @@ const Contact = () => {
 
             {/* Resume */}
             <a
-              href="src/assets/images/Resume_Manimozhi.pdf"
+              href={resumePDF}
+              target="_blank"
+              rel="noreferrer"
               download
               className="px-6 py-3   hover:text-green-300 transition"
             >
