@@ -50,7 +50,7 @@ const Contact = () => {
           >
             {/* Email */}
             <a
-              href="manimozhinagooran06@gmail.com" 
+              href="mailto:manimozhinagooran06@gmail.com"
               className="px-6 py-3 hover:scale-105 transition shadow-lg flex items-center gap-2"
             >
               <MdAttachEmail /> Email
