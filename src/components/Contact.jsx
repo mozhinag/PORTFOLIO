@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { MdAttachEmail } from "react-icons/md";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import contactImage from '../assets/images/Contact.jpeg';
-import resumePDF from '../assets/ResumeLinks.pdf';
+import resumePDF from '../assets/ResumeLinksNew.pdf';
 const Contact = () => {
   return (
     <section id="contact" className="min-h-screen px-6 py-20 text-white flex items-center">
